@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
   // provides reference for sth that can be selected in body and injects component into it
   // see app-root from index.html
   selector: 'app-root',
-  // syntax used to render app
-  template: '<p>Hello World</p>',
+  // used to render app and style
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {}
