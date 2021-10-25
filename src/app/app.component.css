@@ -1,3 +1,13 @@
-p {
-  color: red;
+.imageTitle {
+  margin: 0.25rem 0;
+}
+
+.score {
+  text-align: right;
+}
+
+@media (max-width: 1150px) {
+  .imageTitle {
+    margin: 1rem 0;
+  }
 }
