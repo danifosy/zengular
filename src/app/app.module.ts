@@ -5,7 +5,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 @NgModule({
+  // property that allows to provide array of components that will be initialized when app starts
   bootstrap: [AppComponent],
+  // declare components used in app
   declarations: [AppComponent],
   imports: [BrowserModule],
 })
