@@ -1,3 +1,59 @@
-p {
-  color: red;
+.imageTitle {
+  margin: 0.25rem 0;
+}
+
+.score {
+  text-align: right;
+}
+
+.content {
+  text-align: left;
+}
+
+.cardContainer:hover {
+  border: 0.25rem solid lightblue;
+}
+
+.fadedCard {
+  opacity: 15%;
+}
+
+.imageCard {
+  width: 50%;
+}
+
+.notification {
+  visibility: visible;
+}
+
+.alert {
+  text-align: center;
+}
+
+.progress {
+  margin-top: 2em;
+  height: 40px;
+}
+
+.trophy {
+  background: white;
+  color: gold;
+  font-size: 40px;
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 1150px) {
+  .imageTitle {
+    margin: 1rem 0;
+  }
+}
+@media (min-width: 768px) {
+  .content {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .content {
+    max-width: 40%;
+  }
 }
