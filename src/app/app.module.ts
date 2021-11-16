@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {
+  FontAwesomeModule,
+  FaIconLibrary,
+} from '@fortawesome/angular-fontawesome';
+import { faTrophy } from '@fortawesome/free-solid-svg-icons';
 
 import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
@@ -29,4 +33,8 @@ import { CardComponent } from './card-row/card/card.component';
   imports: [BrowserModule, NgbModule, FontAwesomeModule],
 })
 // modules organize app and extend them with other modules
-export class AppModule {}
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faTrophy);
+  }
+}
