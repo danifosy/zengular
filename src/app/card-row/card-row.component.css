@@ -1,0 +1,9 @@
+.imageCard {
+  width: 50%;
+}
+
+@media (max-width: 1150px) {
+  .imageTitle {
+    margin: 1rem 0;
+  }
+}
