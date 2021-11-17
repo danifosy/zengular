@@ -1,15 +1,17 @@
+import { GameService } from './../game.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-score',
   templateUrl: './score.component.html',
-  styleUrls: ['./score.component.css']
+  styleUrls: ['./score.component.css'],
 })
 export class ScoreComponent implements OnInit {
+  service: GameService;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(public gameService: GameService) {
+    console.log(gameService);
   }
 
+  ngOnInit(): void {}
 }
